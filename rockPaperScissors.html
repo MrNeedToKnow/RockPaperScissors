@@ -18,9 +18,42 @@
 
 
 
+src="rockPaperScissors.js
+
+
+
+
+
 <script>
 
 
+//Game is going to play aginst a computer, that will randomly return rock, paper, or scissors.
+
+const computerChoice = Math.random();
+
+function computerPlay(Choice) {
+   if (Choice < 0.34){
+    Choice="Rock";
+   } else if(Choice < 0.67){
+    Choice="Paper";
+   } else{
+    Choice="Scissors";
+   }
+   return(Choice);
+}
+console.log(computerPlay(computerChoice));
+result = computerPlay(computerChoice);
+
+
+
+//player pick input rock, paper, or scissors. (input should be case insensitive)
+function playerSelection() {
+    
+}
+
+
+//give outcome by comparing both functions. computers random choice and players pick.
+//also state who is the winner (eg: "You Lose! Paper beats Rock")
 
 
 
@@ -28,6 +61,8 @@
 
 
 
-</script>
+
+ 
+</script> 
 </body>
 </html>
