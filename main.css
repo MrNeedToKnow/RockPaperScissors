@@ -1,0 +1,208 @@
+html, body{
+    height: 100%;
+    min-width: 700px;
+
+}
+
+/* ///////////////////Title and Round////////////////////// */
+
+.headerContainer {
+    margin:10px;
+    display:grid;
+    grid-template-rows: 50px 20px 40px;
+    border:rgb(54, 46, 46) 10px solid;
+    border-radius: 20px;
+    background-color: yellow;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    
+}
+ 
+h1 {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(54, 46, 46)
+    
+   
+}
+
+.rounds {
+    font-weight: bold;
+    font-size: 20px;
+    color: rgb(54, 46, 46);
+}
+
+
+.Round {
+    font-size: 20px;
+    font-weight:bold;
+    color:rgb(54, 46, 46);
+    padding-top: 15px;
+}
+
+/* //////////////////scoreBoard/////////////////////// */
+
+.scoreBoardContainer {
+    margin: 10px;
+    border:solid 10px rgb(54, 46, 46);
+    border-radius: 20px;
+    padding: 10px;
+    background-color: yellow;
+    display: grid;
+    grid-template-columns: 250px 10px 250px;
+    justify-content: space-evenly;
+    justify-items: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 20px;
+    color: rgb(54, 46, 46);
+
+}
+
+.playerScore {
+    margin: 10px;
+    
+
+}
+
+.computerScore {
+    margin: 10px;   
+}
+
+@media (max-width: 600px){
+    .scoreBoardContainer {
+        margin: 10px;
+        border:solid 10p rgb(54, 46, 46);
+        border-radius: 20px;
+        padding: 10px 10px 10px 10px;
+        background-color: rgb(251, 255, 0);
+        display: flex;
+        flex-direction: column;
+        font-weight: bold;
+        font-size: 20px;
+    }
+}
+
+/*/////////////////////choiceContaienr///////////////////////////////*/
+
+.choiceContainer{
+    border: solid rgb(54, 46, 46) 10px;
+    margin: 10px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+
+.playerChoiceContainer {
+    margin: 5px;
+    display:flex;
+    flex-direction: column;
+
+}
+
+.computerChoiceContainer {
+    margin: 5px;
+    display:flex;
+    flex-direction: column;
+
+}
+
+.resultContainer{
+    align-self: flex-start;
+    
+    margin-top: 50px;
+    max-width:180px;
+    min-width: 180px;
+    max-height: 50px;
+    min-height: 50px;
+    font-size: 20px;
+    font-weight:bold;
+    color: rgb(54, 46, 46);
+    text-align:center;
+    
+    
+
+}
+
+img{
+    border-radius: 30px;
+    border: solid 10px rgb(54, 46, 46);
+    max-height: 150px;
+    max-width: 150px;
+    margin: 10px;
+}
+
+@media (min-width: 1500px){
+
+    .choiceContainer{
+        border: solid rgb(54, 46, 46) 10px;
+        margin: 10px;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    img{
+        border-radius: 30px;
+        border: solid 10px rgb(54, 46, 46);
+        max-height: 150px;
+        max-width: 150px;
+        margin: 10px;
+    }
+
+    .playerChoiceContainer {
+        margin: 5px;
+        display:flex;
+        flex-direction: row;
+    }
+    
+    .computerChoiceContainer {
+        margin: 5px;
+        display:flex;
+        flex-direction: row;
+    }
+    #playerimgPaper, #imgPaper{
+        height: 140px;
+
+    }
+    
+}
+
+.playerimg:hover{
+    border: rgba(167, 113, 53, 0.904) 10px solid;
+    scale: 1.15;
+    
+}
+
+
+.playerimgSelect{
+    border: rgba(167, 113, 53, 0.904) 10px solid;
+    scale: 1.15;
+}
+
+.computerimgSelect {
+    border: rgba(132, 210, 241, 0.904) 10px solid;
+    scale: 1.15
+}
+
+.restart {
+text-align: center;
+margin: auto;
+margin-top: 30px;
+padding: 1px !important;
+font-weight: bold;
+font-size: 30px;
+
+
+}
+
+.restart:hover {
+    text-decoration: underline;
+    scale: 1.2
+
+}
