@@ -41,13 +41,10 @@ buttons.forEach(selection => selection.addEventListener('click', playerSelection
 function playerSelection(e){
     let playerPick = e.target;
     if (playerPick === Rock){
-        e.target.classList.add("playerimgSelect");
         playerPick = "ROCK"
     } else if (playerPick === Paper){
-        e.target.classList.add("playerimgSelect");
         playerPick = "PAPER"
     } else {
-        e.target.classList.add("playerimgSelect");
         playerPick = "SCISSORS"
     }
         playerButtonAnimation(playerPick);
@@ -157,16 +154,12 @@ function makeWinner(){
         Result.textContent="Player is the Final Winner"
         Restart.textContent="Restart"
         Restart.addEventListener('click', gameRestart);
-        playerButtonAnimationRemove()
-        computerButtonAnimationRemove()
         playerButtonRemove()
     }
     else if ((computerScore ===5 && computerScore>playerScore) || computerScore>=5){
         Result.textContent="Computer is the Final Winner"
         Restart.textContent="Restart"
         Restart.addEventListener('click', gameRestart);
-        playerButtonAnimationRemove()
-        computerButtonAnimationRemove()
         playerButtonRemove()
     }
 }
